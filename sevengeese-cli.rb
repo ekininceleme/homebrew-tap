@@ -5,20 +5,20 @@
 class SevengeeseCli < Formula
   desc "Export your 7Geese performance data — objectives, 1:1s, recognition, and reviews — as JSON."
   homepage "https://github.com/ekininceleme/7geese-cli"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ekininceleme/7geese-cli/releases/download/v0.1.1/7geese-cli_0.1.1_darwin_amd64.tar.gz"
-      sha256 "14324eed87e327eb7c7927b107c633a8043390ad9b30554f71c1983f70f7aa41"
+      url "https://github.com/ekininceleme/7geese-cli/releases/download/v0.1.2/7geese-cli_0.1.2_darwin_amd64.tar.gz"
+      sha256 "04972b7123d6207f11895ae5e93c9f41a3f547665fa2a56d3935a169daf0fd56"
 
       define_method(:install) do
         bin.install "7geese-cli"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ekininceleme/7geese-cli/releases/download/v0.1.1/7geese-cli_0.1.1_darwin_arm64.tar.gz"
-      sha256 "e598707cf9824b656f818eddf6bebcdc5e247a86f619fa0ccc60399dcf7699fb"
+      url "https://github.com/ekininceleme/7geese-cli/releases/download/v0.1.2/7geese-cli_0.1.2_darwin_arm64.tar.gz"
+      sha256 "3a59cecd33db1b3614a5d3a276f271783483155ad64e51ccc747d2ba3a083d4b"
 
       define_method(:install) do
         bin.install "7geese-cli"
@@ -28,15 +28,15 @@ class SevengeeseCli < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ekininceleme/7geese-cli/releases/download/v0.1.1/7geese-cli_0.1.1_linux_amd64.tar.gz"
-      sha256 "937272991531bc42c3cdf67d6e2966bb9b81f7d3218a6f06a47ac72c7c758db0"
+      url "https://github.com/ekininceleme/7geese-cli/releases/download/v0.1.2/7geese-cli_0.1.2_linux_amd64.tar.gz"
+      sha256 "1fc12ce9c0f1a24da040b20b76d4097d32546a9fefbe9a8dde96a15913a6a27b"
       define_method(:install) do
         bin.install "7geese-cli"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ekininceleme/7geese-cli/releases/download/v0.1.1/7geese-cli_0.1.1_linux_arm64.tar.gz"
-      sha256 "f2b3e797b6dccac6b5ef323afb01c1454b9653c4f468ee1a7258c1f919a4ad82"
+      url "https://github.com/ekininceleme/7geese-cli/releases/download/v0.1.2/7geese-cli_0.1.2_linux_arm64.tar.gz"
+      sha256 "0146de5011646a302429fa37f3b5a91cf5d847a46b7a953293988ac840955254"
       define_method(:install) do
         bin.install "7geese-cli"
       end
